@@ -1,8 +1,10 @@
-# React + Vite
+# Load script from external url
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+its also posible to load it with script in index html
+```
+    // Set the source attribute to the URL of the external script
+    script.src = "https://pmerka.github.io/testScriptLoad/index.js";
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+    // Append the script to the document's body
+    document.body.appendChild(script);
+```
